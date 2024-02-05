@@ -12,6 +12,11 @@ img{
   width: 100%;
 }
 
+i{
+  font-size: 1.5rem;
+  color: #b1b1b1;
+}
+
 /* UTILITY */
 .debug{
   background-color: rgba(0, 128, 0, 0.236);
@@ -22,6 +27,10 @@ img{
   display: flex;
 }
 
+.align-center{
+  align-items: center;
+}
+
 .d-column{
   flex-direction: column;
 }
@@ -30,8 +39,56 @@ img{
   justify-content: center;
 }
 
-.d-beetween{
+.d-between{
   justify-content:space-between;
+}
+
+.padding-right-s{
+  padding-right: 10px;
+}
+
+.padding-right-m{
+  padding-right: 30px;
+}
+
+.padding-right-l{
+  padding-right: 50px;
+}
+
+.padding-left-s{
+  padding-left: 10px;
+}
+
+.padding-left-m{
+  padding-left: 30px;
+}
+
+.padding-left-l{
+  padding-left: 50px;
+}
+
+.margin-left-s{
+  margin-left: 10px;
+}
+
+.margin-left-m{
+  margin-left: 30px;
+}
+
+.margin-left-l{
+  margin-left: 50px;
+}
+
+.margin-right-s{
+  margin-right: 10px;
+}
+
+.margin-right-m{
+  margin-right: 30px;
+}
+
+.margin-right-l{
+  margin-right: 50px;
 }
 
 .icon{
@@ -68,12 +125,50 @@ img{
   height: 70px;
 }
 
+.col.action{
+  width: 90px;
+}
+
 .col.noti{
   height: 80px;
 } 
 
+.noti .bell{
+  height: 80%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.noti-text a{
+  color: #4f7485;
+}
+
+.noti i{
+  font-size: 2rem;
+}
+
 .col.input{
   height: 50px;
+}
+
+.input .container{
+  width: 95%;
+  height: 80%;
+}
+
+.magnifying{
+  height: 100%;
+  width: 15%;
+}
+
+.search{
+  width: 85%;
+}
+
+.search input{
+  width: 90%;
+  height: 80%;
 }
 
 .col.chat{
@@ -119,6 +214,10 @@ img{
   /* LEFT COLUMN */
   .col.left{
     width: 90px;
+  }
+
+  .col.action{
+    display: none;
   }
 
   .col.noti{
