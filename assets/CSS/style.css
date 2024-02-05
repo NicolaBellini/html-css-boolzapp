@@ -109,7 +109,7 @@ i{
   background-color: #eaeaea;
   width: 85%;
   height: 95vh;
-  margin: 20px auto;
+  margin: 1% auto;
 }
 
 
@@ -255,6 +255,7 @@ border: 1px solid #f7f7f7;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: scroll;
 }
 
 .message .text{
@@ -318,6 +319,9 @@ border: 1px solid #f7f7f7;
   .col.right{
     width: calc(100% - 90px);
   }
+
+  .user .name{
+    display: block;
 }
 
 @media(max-width:542px){
