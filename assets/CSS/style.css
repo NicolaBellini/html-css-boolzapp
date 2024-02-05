@@ -17,6 +17,10 @@ img{
   width: 100%;
 }
 
+input{
+  padding-left: 10px;
+}
+
 i{
   font-size: 1.5rem;
   color: #b1b1b1;
