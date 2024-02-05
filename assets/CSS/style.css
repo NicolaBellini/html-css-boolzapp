@@ -54,6 +54,10 @@ i{
   justify-content:space-between;
 }
 
+.d-around{
+  justify-content: space-around;
+}
+
 .padding-right-s{
   padding-right: 10px;
 }
@@ -273,7 +277,112 @@ border: 1px solid #f7f7f7;
   margin-top: 10px;
   width: 65%;
   padding: 20px 20px 35px 15px;
+  position: relative;
 }
+
+.message .chevron i{
+  font-size: .7rem;
+}
+
+.hidden-menu{
+  display: none;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.chevron:hover .hidden-menu{
+  z-index: 2;
+  display: block;
+  position: absolute;
+  top: 40px;
+  right: -5px;
+  animation: apparition .13s;
+}
+
+
+.hidden-menu li{
+  margin: 10px 10px 5px 10px;
+  /* border-bottom: 1px solid #b7babc; */
+  list-style: none;
+  color: #b7babc;
+}
+
+.menu-section{
+  border-bottom: 1px solid lightgray;
+}
+
+.hidden-menu .emoji{
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.hidden-menu .plus{
+  background-color: lightgray;
+  border-radius: 50%;
+  margin: 10px;
+  height: 20px;
+  width: 19px;
+  padding: 3px;
+}
+
+.hidden-menu .plus i{
+  font-size: .6rem;
+}
+
+
+.hidden-menu .emoji i{
+  font-size: 1.2rem;
+  margin: 10px;
+  color: grey;
+}
+
+.hidden-menu .menu-section i{
+  font-size: 1.2rem;
+}
+
+.hidden-menu i:hover,
+.hidden-menu a:hover{
+  color: rgb(52, 52, 52);
+}
+
+
+.hidden-menu a{
+  text-decoration: none;
+  color: #b7babc;
+}
+
+@keyframes apparition {
+  0%{
+      opacity: 0;
+  }
+  25%{
+    
+      opacity: .2;
+   
+  }
+  50%{
+  
+      opacity: .5;
+  
+  }
+  80%{
+  
+      opacity: .7;
+    
+  }
+  100%{
+    .hidden-menu{
+      opacity: 1;
+    }
+  }
+  
+}
+
+/* .hidden-menu fai le icone piu grandi */
+
+
+
+
 
 .active{
   justify-content: flex-end;
