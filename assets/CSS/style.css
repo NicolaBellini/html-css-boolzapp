@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+img{
+  width: 100%;
+}
+
 /* UTILITY */
 .debug{
   background-color: rgba(0, 128, 0, 0.236);
@@ -14,12 +18,28 @@
   display: flex;
 }
 
+.d-column{
+  flex-direction: column;
+}
+
 .d-center{
   justify-content: center;
 }
 
 .d-beetween{
   justify-content:space-between;
+}
+
+.icon{
+  height: 80%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: red;
+  overflow: hidden;
+}
+
+.icon img{
+  object-fit: cover;
 }
 
 /* MAIN */
@@ -34,10 +54,27 @@
 
 /* COLUMN LEFT */
 
-.row :nth-child(1){
+.col.left{
   /* min-width: 380px; */
   width: 380px;
   height: 100%;
+}
+
+.col.profile{
+  height: 70px;
+}
+
+.col.noti{
+  height: 80px;
+} 
+
+.col.input{
+  height: 50px;
+}
+
+.col.chat{
+  height: calc(100% - 200px);
+  overflow: scroll;
 }
 
 /* COLUMN LEFT */
@@ -46,9 +83,22 @@
 
 /* COLUMN RIGHT */
 
-.row :nth-child(2){
+.col.right{
   width: calc(100% - 380px );
   height: 100%;
+}
+
+.col.user{
+  height: 70px;
+}
+
+.col.lecture{
+  height: calc(100% - 140px) ;
+  overflow: scroll;
+}
+
+.col.write{
+  height: 70px;
 }
 
 /* COLUMN RIGHT */
@@ -65,6 +115,18 @@
   /* LEFT COLUMN */
   .col.left{
     width: 90px;
+  }
+
+  .col.noti{
+    display: none;
+  }
+
+  .col.input{
+    display: none;
+  }
+
+  .col.chat{
+    height: calc(100% - 70px);
   }
 
   /* RIGHT COLUMN */
