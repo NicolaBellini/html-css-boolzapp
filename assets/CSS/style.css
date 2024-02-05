@@ -6,7 +6,11 @@
 
 body{
   font-family: 'Lato', sans-serif;
-  background-color: violet;
+  background: linear-gradient(to bottom, #009688 20%, #dbdbd3 0%) no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+  height: 100vh;
+
 }
 
 img{
